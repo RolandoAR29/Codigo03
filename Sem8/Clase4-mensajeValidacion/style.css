@@ -1,0 +1,49 @@
+:root{
+    --var-color-yellow: #FFA500;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    padding: 30px 50px;
+    background-color: var(--var-color-yellow);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.form-group{
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    text-align: left;
+}
+.form-group p{
+    display: none;
+    font-size: 10px;
+    font-weight: normal;
+    color: red;
+    margin: 0;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+.form-group textarea{
+    resize: none;
+}
+.form-group label{
+    font-size: .6em;
+}
