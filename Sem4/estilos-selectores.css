@@ -1,0 +1,79 @@
+hr{
+    margin: 20px 0;
+}
+/*S. Etiqueta*/
+h1{
+    font-size: 1em;
+    font-weight: normal;
+}
+/*S. clase*/
+.titulo{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+/*S. de Id*/
+#subtitulo{
+    font-size: 2em;
+    font-weight: 700;
+}
+/*S. Universal*/
+*{
+    margin: 0;
+}
+/*S. Case Sensitive | Case insensitive*/
+/*Etiquetas son Case insensitive*/
+P{
+    color: green;
+}
+/*Etiquetas son Case Sensitive*/
+.titulo{
+    color: red;
+}
+/*S. agrupados*/
+.titulo,
+#subtitulo{
+    color: royalblue;
+}
+/*S. descendientes*/
+/*Espacio -> herencia*/
+.titulo2 .subtitulo2{
+    background: silver;
+}
+/*Sin Espacio -> Elemento debe tener dichos selectores*/
+.sub.subtitulo2{
+    font-style: italic;
+}
+/*S. hijo directo*/
+li > ul {
+    display: none;
+}
+li:hover ul{
+    display: block;
+}
+/*S. hermano*/
+._titulo + ._subtitulo{
+    color: red;
+}
+/*S. hermanos siguientes*/
+._titulo ~ ._subtitulo{
+    color: red;
+}
+.activado {display:none}
+.check:checked ~ .activado{display:block}
+.check:checked ~ .desactivado{display:none}
+/*S. selectores de atributo*/
+[type="text"]{
+    border-radius: 20px;
+    border: 2px solid red;
+}
+[required]{
+    border: 3px dotted blue
+}
+/*Empieza con...*/
+[href^="https"]{
+    font-size: 2em;
+}
+/*Termina con...*/
+[href$=".pdf"]{
+    font-size: 2em;
+}

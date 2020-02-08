@@ -1,0 +1,111 @@
+p{
+    text-align: center | left | right | justify | start | end ;
+                /*centrado | izquierda | derecha | justificado | inicio | final*/
+    text-transform: uppercase | lowercase | capitalize;
+                /* mayúsculas | minúsuclas | cada palabra empieza con mayúsculas */
+}
+
+a{
+    text-decoration: none | overline | line-through | underline;
+                    /* nada | línea sobre texto | línea de tachado | subrayado */
+    direction: ltr | rtl ;
+             /* texto de izquierda a derecha | texto de derecha a izquierda */ 
+}
+
+p{
+    text-indent: 50px;
+                 /* tamaño de sangría */
+    letter-spacing: 50px;
+                 /* espacio entre letras de una palabra */
+    word-spacing: 50px;
+                 /* espacio entre palabras de un párrafo */
+    line-height: 0.7;
+                /* espacio entre líneas de un párrafo */
+}
+
+@font-face{
+    font-family: 'Oswaldo';
+    src: url('Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+p {
+    font-family: 'Oswaldo', 'Times New Roman', Times, serif;
+                /* tipos de fuente */
+}
+
+p {
+    font-style: italic | normal;
+                /* texto en cursiva */
+    font-size: 16px | 1em | 10vh;
+                /* tamaño del texto */
+    font-weight: normal | bold | lighter | 700;
+                /* texto en negrita | grosor de texto delgado | grosor de letra */
+    font-variant: small-caps;
+                /* texto en mayúsculas mostradas como texto tipo oración */
+}
+
+p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+  p {
+    border: 5px solid red;
+  }
+p.{
+    flex-grow: ; 
+}
+
+/*Flex*/
+/*.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+*/
+
+/*baseline
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/
+
+/*
+.flex-container {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/

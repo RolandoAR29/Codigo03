@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+/*Herencia*/
+/*
+h1{
+    font-size: 1em;
+    color: blue;
+}
+span{
+    color: green;
+}
+*/
+/* Position */
+/* -- static */
+.caja{
+    border: 2px solid red;
+    position: static;
+}
+/* -- relative */
+.caja{
+    border: 2px solid red;
+    position: relative;
+    top: 20px;   
+}
+/* -- fixed */
+.caja{
+    border: 2px solid red;
+    position: fixed;
+    top: 20px;   
+}
+/* -- absolute */
+.caja{
+    border: 2px solid red;
+    position: absolute;
+    top: 20px;   
+}
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    left: 20px;
+    border: 3px solid #73AD21;
+}
+div.absolute {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+/*Sticky*/
+.caja{
+    border: 2px solid red;
+    position: sticky;
+    top: 20px;   
+}
+/*Superposición*/
+h1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+}
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99998;
+}
+p{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: -10;
+}
+/* Background */
+.caja2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #73AD21;
+    background-image: url('diatrabajo22.jpg');
+    background-repeat: round; /*ocupar todo el alto del contenedor*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    /* background-size: 100vw 100vh; */
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+
+@media only screen and (min-width: 600px){
+    .caja2{
+        background-color: blue;
+    }
+}

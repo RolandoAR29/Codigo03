@@ -1,0 +1,116 @@
+:root{
+    --var-negro: #000000;
+    --var-blanco: #FFFFFF;
+    --var-verde: rgb(75, 150, 75);
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--var-blanco);
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--var-negro);
+    color: var(--var-blanco);
+    padding: 0px 20px;
+    align-items: center;
+}
+.logo{
+    margin: 0
+}
+.nav-lista{
+    display: flex;
+    text-transform: uppercase;
+}
+.nav-lista .nav-lista-item{
+    padding: 15px 0px;
+    border-left: 1px solid var(--var-blanco);
+    position: relative;
+    text-align: center;
+}
+.nav-lista :nth-child(4){
+    border-right: 1px solid var(--var-blanco);
+}
+li > ul{
+    display: none;
+}
+li:hover ul{
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+}
+
+.nav-lista-subItem{
+    text-align: center;
+    border-top: 1px solid var(--var-blanco);
+}
+
+.nav-li{
+    padding: 15px 0px;
+    width: 140px;
+    background-color: var(--var-negro);
+    color: var(--var-blanco);
+}
+
+.nav-lista .nav-li :hover{
+    background-color: var(--var-verde);
+}
+
+@media only screen and (max-width: 720px) {
+    .logo{
+        padding: 20px 20px;
+    }
+    .nav-bar{
+        width: 180px;
+    }
+    .nav-bar, .nav-lista{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .nav-lista{
+        width: 100%;
+    }
+    .nav-lista .nav-li{
+        width: 100%;
+        text-align: left;
+    }
+    .nav-lista .nav-lista-item{
+        border-left: none;
+        border-top: 1px solid var(--var-blanco);
+        box-sizing: border-box;
+    }
+    .nav-lista :nth-child(4){
+        border-right: none;
+        border-bottom: none;
+    }
+    a{
+        padding-left: 20px;
+    }
+    .nav-lista-subItem a{
+        padding-left: 40px;
+    }
+    li:hover ul{
+        position: static;
+        margin-top: 15px;
+        margin-bottom: -15px;
+    }
+    
+    .nav-lista .nav-lista-item.nav-li:nth-child(3) :hover .nav-lista .nav-lista-item.nav-li:nth-child(4){
+        margin-top: -20px;
+        transition: 0.5s;
+    }
+    
+    
+}

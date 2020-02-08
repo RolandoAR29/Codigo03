@@ -1,0 +1,117 @@
+/*none: Quitar valor anterior*/
+/*initial: Asigna valor inicial de la clase*/
+/*inherit: Hereda propiedades de elemento padre*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap'); */
+
+
+
+/*Estilos para texto*/
+.texto{
+    /* Centrar texto */
+    text-align: center;
+    text-transform: capitalize; /*Convierte cada palabra en tipo oración*/
+    text-decoration: overline ; /*dibuja línea en la parte superior*/
+}
+a{
+    text-decoration: none;
+}
+
+.direction{
+    direction: rtl;
+}
+
+.palabra{
+    text-indent: 30px; /*Sangría para texto*/
+    letter-spacing: 10px; /*Espacio entre las letras de una palabra*/
+    word-spacing: 30px; /*Espacio entra palabras*/
+    line-height: 20px; /*Espacio entre líneas de un párrafo*/
+}
+
+del{
+    text-decoration: none;
+}
+
+
+/*Estilos para fuente*/
+/*
+Serif: Adorno en cada letra
+sans-serif: No tienen adornos
+display: usado para títulos
+handwritting: "Escritura a mano"
+monoscape: Todas tienen el mismo ancho
+*/
+@font-face{
+    font-family: 'Lobster';
+    src: url('Lobster/Lobster-Regular.ttf');
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-Regular.ttf')
+}
+
+.fuentes{
+    font-family: 'Lobster';
+    font-variant: small-caps;
+}
+.fuentes-texto{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/*margen*/
+.padre-caja{
+    text-align: initial;
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* margin: 50px; Para los cuatro lados */
+    /* margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px; */
+    /* margin: 50px 40px 30px 20px; arriba | derecha | abajo | izquierda */
+    /* margin: 20px 40px 10px; arriba | laterales | abajo */
+    margin: 50px 30px; /* arriba - abajo | laterales*/
+    display: inline-block;
+}
+.p-caja{
+    display: inline-block;
+}
+.boton{
+    margin: 100px;
+    /* padding: 50px;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px; */
+    /* padding: 50px 40px 30px 20px; arriba | derecha | abajo | izquierda */
+    /* padding: 20px 40px 10px; arriba | laterales | abajo */
+    padding: 50px 30px; /* arriba - abajo | laterales*/
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    /* border-radius: 50%; */
+    border: 5px solid blue; /*border-width | border-style | border-color*/
+    border-top-left-radius: 20px;
+    border-top-color: orange;
+    border-bottom-width: 50px;
+}
+
+:root{
+    --varColor: orange;
+}
+.caja2{
+    height: 50px;
+    width: 50%;
+    background-color: var(--varColor);
+}
