@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.caja{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    box-shadow: -7px 7px 5px 2px black;
+             /*eje x - eje y - desenfoque - radio*/
+}
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    border: none;
+    outline: 0;
+}
+button:hover{
+    background-color: rgb(121, 208, 211);
+    font-size: 1.1em;
+    font-weight: bold;
+}
