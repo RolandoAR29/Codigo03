@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-sm mb-2" style="background-color: gray;">100% wide until small breakpoint - 576</div>
+    <div class="container-md mb-2" style="background-color: gray;">100% wide until medium breakpoint - 768</div>
+    <div class="container-lg mb-2" style="background-color: gray;">100% wide until large breakpoint - 992</div>
+    <div class="container-xl mb-2" style="background-color: gray;">100% wide until extra large breakpoint - 1200</div>
+    <div class="container-fluid" style="background-color: gray;">100% wide</div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div style="background-color: blanchedalmond;">One of three columns</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div style="background-color: blanchedalmond;">One of three columns</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div style="background-color: blanchedalmond;">One of three columns</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div style="background-color: blanchedalmond;">One of three columns</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2 py-5">
+            <div class="bg-light" >1 of 3</div>
+          </div>
+          <div class="col-md-auto py-5">
+            <div class="bg-light" >Variable width content</div>
+          </div>
+          <div class="col col-lg-2 py-5">
+            <div class="bg-light" >3 of 3</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col py-5">
+            <div class="bg-light" >1 of 3</div>
+          </div>
+          <div class="col-md-auto py-5">
+            <div class="bg-light" >Variable width content</div>
+          </div>
+          <div class="col col-lg-2 py-5">
+            <div class="bg-light" >3 of 3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div class="row justify-content-start">
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+          <div class="col-4 bg-info my-2">
+            One of two columns
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5 ">
+        <div class="row">
+          <div class="col">
+            <div class="bg-warning order-1 p-2">First in DOM, no order applied</div>
+          </div>
+          <div class="col order-12 ">
+            <div class="bg-warning p-2">Second in DOM, with a larger order</div>
+          </div>
+          <div class="col order-1 ">
+            <div class="bg-warning p-2">Third in DOM, with an order of 1</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="bg-info m-1">Level 1: .col-sm-9</div>
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                <div class="bg-info m-1">Level 2: .col-8 .col-sm-6</div>
+              </div>
+              <div class="col-4 col-sm-6">
+                <div class="bg-info m-1">Level 2: .col-4 .col-sm-6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
