@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Eidetica Sound</title>
+	<link rel="icon" href="assets/img/content/favicon.ico">
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+	<div class="page-loader">
+		 <div class="vertical-align align-center">
+			  <img src="assets/loader/loader.gif" alt="" class="loader-img">
+		 </div>
+	</div>
+
+	<!-- =============== START BREADCRUMB ================ -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/header/hollybeach2.jpg');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div id="home" style="position: absolute;left: 0;top: 0;">
+							<div class="intro-header">
+								<div class="js-height-full star" style="height: 955px;">
+									<div class="star-pattern-1 js-height-full" style="height: 994px;"></div>
+									<div class="col-sm-12"> 
+										<div class="starTitle">
+											<div class="grid__item">
+						                		<h1>
+								                	<a class="link link-yaku" href="#">
+														<span>E</span><span>I</span><span>D</span><span>E</span><span>T</span><span>I</span><span>C</span><span>A</span>					
+													</a>
+										        </h1>
+						                	</div>
+											<h4>Sound</h4>
+										</div>
+										<canvas class="cover" width="1920" height="955"></canvas>
+									</div>
+								</div>
+							</div>
+	   					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END BREADCRUMB ================ -->
+
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/06LollyGagging.mp3" data-title="Lolly Gagging" data-artist="Eidetica Sound"></div>
+		
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/player/thumbnail.png" alt="">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+
+	<!-- =============== START PLAYLIST ================ -->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">JULIA</span>
+				<span class="about-length">13:27</span>
+				<span class="about-available">AVAILABLE ON SOUNDCLOUD</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/01Running.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-200">
+				<audio preload="metadata" src="assets/audio/01Running.mp3" title="Running"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/running?in=eidetica-sound/sets/seeking-solace">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - Running
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					02:14
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/02Zen.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/02Zen.mp3" title="Zen"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/zen?in=eidetica-sound/sets/seeking-solace">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - Zen
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					01:51
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/03SadFlute.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/03SadFlute.mp3" title="Sad Flute"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/sad-flute?in=eidetica-sound/sets/seeking-solace">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - Sad Flute
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					02:09
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/04YouMakeMeFeelAlive.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/04YouMakeMeFeelAlive.mp3" title="You Make Me Feel Alive"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/you-make-me-feel-alive">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - You Make Me Feel Alive
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					01:23
+				</time>
+			</div>
+            <div class="trak-item" data-audio="assets/audio/05AnotherFunction.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/05AnotherFunction.mp3" title="Another Function"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/another-function?in=eidetica-sound/sets/seeking-solace">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - Another Function
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					02:02
+				</time>
+			</div>
+             <div class="trak-item" data-audio="assets/audio/06LollyGagging.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/06LollyGagging.mp3" title="Lolly Gagging"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/lolly-gagging?in=eidetica-sound/sets/seeking-solace">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - Lolly Gagging
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					02:15
+				</time>
+			</div>
+             <div class="trak-item" data-audio="assets/audio/07WhatAreYouDreaming.mp3" data-artist="Eidetica Sound" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/07WhatAreYouDreaming.mp3" title="What Are You Dreaming"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="https://soundcloud.com/eidetica-sound/what-are-you-dreaming?in=eidetica-sound/sets/seeking-solace">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Eidetica Sound - What Are You Dreaming?
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					01:31
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYLIST ================ -->
+	
+
+	<!-- =============== START TWITTER SECTION ================ -->
+	<section class="padding hide-section background-properties" style="background-image: url(assets/img/twitter/fiddle1920x491B.jpg);">
+		<div class="twitter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+                        <p><a href="https://twitter.com/holly_chadwick" target="_blank">@holly_chadwick</a></p>
+                        <p><a href="https://twitter.com/holly_chadwick" target="_blank"><img src="assets/img/twitter/hollyss.jpg" alt="hollydirecting" ALIGN="right"></a>
+							<a href="https://twitter.com/holly_chadwick" class="linkTwitter" target="_blank"></a>I was raised by my grandparents on Whidbey Island. They believed in rigorous music studies. Though I didn’t become a concert pianist, I have directed short movies, documentaries and now the web series, the Sounds of Freedom. I earned a B.A. in Film and Digital Media from the University of California, Santa Cruz and studied fine art and digital media as far away as Italy and The Banff Centre in Alberta Canada.
+                        </p>
+                        <p><a href="https://soundcloud.com/eidetica-sound/" target="_blank"><img src="assets/img/albums/albumCover2.png" alt="twitterLogo" ALIGN="left"></a>I make music inspired by the movies I make and I make music that inspires the movies I make. My music found here was created while writing the script for my Amazon series, Sounds of Freedom. It's inspired by the character of Julia, a service woman who returns from the Iraq war with PTSD. I hope you enjoy my music streaming for FREE on <a href="https://soundcloud.com/eidetica-sound" target="_blank">Soundcloud</a> and watch Sounds of Freedom for FREE with your Prime membership <a href="https://www.amazon.com/Eerie-Recall/dp/B0762BTTPH/ref=sr_1_1?s=instant-video&ie=UTF8&qid=1513030188&sr=1-1&keywords=sounds+of+freedom" target="_blank">HERE</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END TWITTER SECTION ================ -->
+
+	<!-- =============== START VIDEO SECTION ================ -->
+	<section class="videoHome hide-section padding">
+		<div class="container">
+			<div class="row">
+				<div class="sectionTitle">
+					<span class="heading-t3"></span>
+					<h2>Video</h2>
+					<span class="heading-b3"></span>
+					<p>Check out my latest videos and follow me on <a href="https://vimeo.com/eideticfilm" target="_blank">Vimeo</a> to view more.</p>
+				</div><!-- end sectionTtile -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://player.vimeo.com/video/188606920"  allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://player.vimeo.com/video/173301847"  allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://player.vimeo.com/video/224710409"  allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+			</div>
+		</div>
+	</section>
+	<!-- =============== END VIDEO SECTION ================ -->
+
+	<!-- =============== START GALLERY SECTION ================ -->
+	<section style="padding-bottom:0; padding-top:0;" class="hide-section">
+		<div class="gallerySection">
+			<div class="container-fluid" style="padding:0;">
+				<div class="col-sm-12">
+					<!-- Content Container -->
+					<div class="content-container clearfix">
+						<!-- Single Album Container -->
+						<div class="single-photo-album-container">
+							<div class="row">
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<!-- Single Album Image -->
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/gallery/hollylook960x540.jpg" alt="">
+												<div class="overlay">
+												   <a class="info lightbox" href="assets/img/gallery/hollylook960x540.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+										<!-- Single Album View Button -->
+										
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/trees480x540.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/trees960x540.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/fiddlemoss480x540.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/fiddlemoss960x480.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/treefiddle480x540.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/treefiddle960x540.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/hollycoolwalk480x540.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/hollycoolwalk960x540.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/hollyfiddle960x540.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/hollyfiddle960x540.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</div>
+	</section>
+	<!-- =============== END GALLERY SECTION ================ -->
+
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#eeeeee;" class="hide-section">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; Eidetica Sound 2018</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul class="clearfix">
+								<li><a href="http://twitter.com/holly_chadwick" class="icon-button shopIcon" target="_blank"><i class="fa fa-twitter"></i><span></span></a></li>
+								<li><a href="https://www.facebook.com/eideticasound" class="icon-button shopIcon" target="_blank"><i class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="https://soundcloud.com/eidetica-sound" class="icon-button shopIcon" target="_blank"><i class="fa fa-soundcloud"></i><span></span></a></li>
+								<li><a href="https://vimeo.com/eideticfilm" class="icon-button shopIcon" target="_blank"><i class="fa fa-vimeo"></i><span></span></a></li>  
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop back-to-top" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+.bg-opacity{
+    background-color: rgb(242, 242, 242, .3); /*rgba(129, 13, 94, .5);*/
+    padding: 35px;
+    box-sizing: border-box;
+}
+.padding-p4{
+    padding-top: 15px;
+}
