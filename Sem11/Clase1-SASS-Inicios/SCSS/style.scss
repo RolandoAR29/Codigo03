@@ -1,0 +1,101 @@
+/*
+variables
+Inician con el símbolo $
+*/
+$number: 1;
+$number2: 50px;
+$number3: 20s;
+$string: 'Hola';
+$string: none;
+$color: red;
+$color2: hsl(100, 50, 60);
+$color3: #AA00FF;
+$list: 1px solid blue;
+$list2: primary, secondary,tertinary;
+$boolean: true;
+$map: (
+    primary: red,
+    secondary: yellow,
+    tertinary: purple
+);
+
+body{
+    @debug type-of($color);
+    @debug type-of($color2);
+}
+
+.caja{
+    width: $number2;
+    height: $number2 * 3;
+}
+
+/*
+Importar componentes
+Utilizando @ seguido de la ruta del archivo entre comillas
+*/
+@import "Components/section";
+
+/*
+mixin
+Nos permite reutilizar el código de un elemento el cual ha sido declarado dentro de un @mixin
+
+Permite recibir parámetros de acuerdo al tipo de dato se envía
+*/
+@mixin button($color) {
+    display: inline-block;
+    padding: 10px 5px;
+    background-color: $color;
+
+    /*
+    El símbolo & sirve para referenciar al elemnto padre al que se desea aplicar un estilo
+    */
+    &:hover{
+        background-color: #FFFFFF;
+    }
+
+    @media screen and (min-width: 576px){
+        background-color: green;
+    }
+    @media screen and (min-width: 768px){
+        background-color: aquamarine;
+    }
+    @media screen and (min-width: 992){
+        background-color: violet;
+    }
+    @media screen and (min-width: 1200px){
+        background-color: tomato;
+    }
+}
+
+.button{
+    @include button($color);
+    display: flex;
+}
+
+.section{
+    @include button($color2);
+    background-color: #FFFFFF;
+    &:hover{
+        background-color: #000;
+    }
+}
+
+/*
+Ciclo FOR
+*/
+@for $i from 1 through 12 {
+    @if 12 % $i == 0 {
+        .cols-#{$i} {
+            width: 100 / (12 / $i) * 1%;
+        }
+    }
+}
+
+/*
+.col-1 -> 8.33%
+.col-2 -> 16.6%;
+.col-3 -> 25%
+.col-4 -> 33.3%
+.col-6 -> 50%
+.col-12 -> 100%
+*/

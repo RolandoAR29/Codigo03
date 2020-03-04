@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*
+variables
+Inician con el símbolo $
+*/
+.caja {
+  width: 50px;
+  height: 150px;
+}
+
+/*
+Importar componentes
+Utilizando @ seguido de la ruta del archivo entre comillas
+*/
+.container {
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+.container .title {
+  color: #000;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.container .subtitle {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*
+mixin
+Nos permite reutilizar el código de un elemento el cual ha sido declarado dentro de un @mixin
+
+Permite recibir parámetros de acuerdo al tipo de dato se envía
+*/
+.button {
+  display: inline-block;
+  padding: 10px 5px;
+  background-color: red;
+  /*
+  El símbolo & sirve para referenciar al elemnto padre al que se desea aplicar un estilo
+  */
+  display: flex;
+}
+.button:hover {
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 576px) {
+  .button {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button {
+    background-color: aquamarine;
+  }
+}
+@media screen and (min-width: 992) {
+  .button {
+    background-color: violet;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    background-color: tomato;
+  }
+}
+
+.section {
+  display: inline-block;
+  padding: 10px 5px;
+  background-color: #88cc66;
+  /*
+  El símbolo & sirve para referenciar al elemnto padre al que se desea aplicar un estilo
+  */
+  background-color: #FFFFFF;
+}
+.section:hover {
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 576px) {
+  .section {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    background-color: aquamarine;
+  }
+}
+@media screen and (min-width: 992) {
+  .section {
+    background-color: violet;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    background-color: tomato;
+  }
+}
+.section:hover {
+  background-color: #000;
+}
+
+/*
+Ciclo FOR
+*/
+.cols-1 {
+  width: 8.3333333333%;
+}
+
+.cols-2 {
+  width: 16.6666666667%;
+}
+
+.cols-3 {
+  width: 25%;
+}
+
+.cols-4 {
+  width: 33.3333333333%;
+}
+
+.cols-6 {
+  width: 50%;
+}
+
+.cols-12 {
+  width: 100%;
+}
+
+/*
+.col-1 -> 8.33%
+.col-2 -> 16.6%;
+.col-3 -> 25%
+.col-4 -> 33.3%
+.col-6 -> 50%
+.col-12 -> 100%
+*/
