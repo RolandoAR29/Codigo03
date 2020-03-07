@@ -22,3 +22,6 @@ git push origin :nombreDeLaRama  -- eliminamos la rama del repositorio
 git branch -- Visualizar ramas activas
 
 git branch -r -- Visualizar ramas remotas
+
+Visualizar gráficamente los cambios
+git log --pretty=format:"%h %s" --graph
