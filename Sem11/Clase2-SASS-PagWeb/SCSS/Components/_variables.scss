@@ -1,4 +1,5 @@
 $colorPrincipal: #10B8C7;
+$colorSecundario: #F7F7F7;
 $colorBlanco: #FFFFFF;
 $colorNegro: #000000;
 
@@ -6,13 +7,14 @@ $colorNegro: #000000;
     font-family: 'OpenSans-regular';
     src: url('../resources/font/OpenSans-Regular.ttf');
 }
-
 $fuente: 'OpenSans-regular';
+
+$tamanioTituloPrincipal: 65px;
 $tamanioTitulo: 24px;
 $tamanioTexto: 16px;
 
 $altoPantalla: 100vh;
-$anchoPantall: 100vw;
+$anchoPantalla: 100vw;
 
 $desktop: 768px;
 $mobile: 456px;

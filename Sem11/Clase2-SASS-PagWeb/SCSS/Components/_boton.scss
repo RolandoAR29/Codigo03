@@ -1,0 +1,27 @@
+button {
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid $colorBlanco;
+    padding: 10px 30px;
+    outline: 0;
+    font-size: $tamanioTexto;
+    background-color: transparent;
+    color: $colorBlanco;
+    margin: 0 3px;
+
+    &:hover{
+        background-color: $colorPrincipal;
+    border: 1px solid transparent;
+    }
+}
+
+.boton__secundario{
+    background-color: $colorPrincipal;
+    border: 1px solid $colorPrincipal;
+
+    &:hover{
+        background-color: $colorBlanco;
+        color: $colorPrincipal;
+    }
+}

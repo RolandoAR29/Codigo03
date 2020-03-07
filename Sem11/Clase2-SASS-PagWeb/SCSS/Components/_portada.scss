@@ -1,0 +1,22 @@
+.portada{
+    height: $altoPantalla;
+    background-image: url('../resources/image/portada.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__titulo{
+        color: $colorBlanco;
+        font-size: $tamanioTituloPrincipal;
+        text-transform: uppercase;
+    }
+
+    &__sub__titulo{
+        color: $colorBlanco;
+
+    }
+}
