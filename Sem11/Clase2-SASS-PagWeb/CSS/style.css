@@ -58,23 +58,23 @@ button {
   font-weight: bolder;
   text-transform: uppercase;
   border-radius: 3px;
-  border: 1px solid #333333;
+  border: 1px solid #FFFFFF;
   padding: 10px 30px;
   outline: 0;
   font-size: 16px;
   background-color: transparent;
-  color: #333333;
+  color: #FFFFFF;
   margin: 0 3px; }
   button:hover {
-    background-color: #222222;
+    background-color: #10B8C7;
     border: 1px solid transparent; }
 
 .boton__secundario {
-  background-color: #222222;
-  border: 1px solid #222222; }
+  background-color: #10B8C7;
+  border: 1px solid #10B8C7; }
   .boton__secundario:hover {
-    background-color: #333333;
-    color: #222222; }
+    background-color: #FFFFFF;
+    color: #10B8C7; }
 
 .portada {
   height: 100vh;
@@ -86,21 +86,22 @@ button {
   justify-content: center;
   flex-direction: column; }
   .portada__titulo {
-    color: #333333;
+    color: #FFFFFF;
     font-size: 65px;
     text-transform: uppercase; }
   .portada__sub__titulo {
-    color: #333333; }
+    color: #FFFFFF; }
 
 .item {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  align-content: center; }
+  justify-content: center; }
   .item__icon {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    background-color: #F6F6F6;
+    background-color: #F7F7F7;
     margin-bottom: 5px; }
     .item__icon:hover {
-      background-color: #222222; }
+      background-color: #10B8C7; }
