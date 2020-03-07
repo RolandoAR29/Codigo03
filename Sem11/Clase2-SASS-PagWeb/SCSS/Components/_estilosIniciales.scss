@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $fuente;
+}
+
+@for $i from 1 through 12 {
+    @if 12 % $i == 0 {
+        .cols-#{$i} {
+            width: 100 / (12 / $i) * 1%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+$colorPrincipal: #10B8C7;
+$colorBlanco: #FFFFFF;
+$colorNegro: #000000;
+
+@font-face {
+    font-family: 'OpenSans-regular';
+    src: url('../resources/font/OpenSans-Regular.ttf');
+}
+
+$fuente: 'OpenSans-regular';
+
+$altoPantalla: 100vh;
+$anchoPantall: 100vw;
+
+$desktop: 768px;
+$mobile: 456px
