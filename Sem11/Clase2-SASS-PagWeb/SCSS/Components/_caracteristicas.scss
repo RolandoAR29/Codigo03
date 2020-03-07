@@ -1,18 +1,18 @@
 .item{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    align-content: center;
-
+    justify-content: center;
+    
     &__icon{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
         border-radius: 50%;
         background-color: $colorSecundario;
         margin-bottom: 5px;
-
+        
         &:hover{
             background-color: $colorPrincipal;
         }
     }
-
 }
