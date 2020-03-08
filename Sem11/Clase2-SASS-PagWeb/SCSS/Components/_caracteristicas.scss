@@ -10,6 +10,18 @@
         border-radius: 50%;
         background-color: $colorSecundario;
         margin-bottom: 5px;
+        position: relative;
+        &__icono{
+            height: $altoIcono;
+            width: $anchoIcono;
+            background-image: url('../resources/image/shop2.png');
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 13.5px;
+            left: 13.5px;
+            
+        }
         
         &:hover{
             background-color: $colorPrincipal;
