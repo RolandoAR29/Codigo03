@@ -11,20 +11,22 @@
         background-color: $colorSecundario;
         margin-bottom: 5px;
         position: relative;
-        &__icono{
-            height: $altoIcono;
-            width: $anchoIcono;
-            background-image: url('../resources/image/shop2.png');
-            background-position: center center;
-            background-size: cover;
+        i{        
+            // background-position: center center;
+            // background-size: cover;
             position: absolute;
-            top: 13.5px;
-            left: 13.5px;
+            top: 25%;
+            left: 25%;
+            color: $colorPrincipal;
             
         }
         
         &:hover{
             background-color: $colorPrincipal;
+        }
+
+        &:hover i{
+            color: $colorSecundario;
         }
     }
 }
