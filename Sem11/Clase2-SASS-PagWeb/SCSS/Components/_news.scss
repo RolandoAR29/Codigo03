@@ -1,0 +1,102 @@
+.news
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    
+
+        &__cabecera
+        {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &__title{
+                color: $colorNegro;
+                font-family: $fuente;
+                font-size: 1.3em;
+                letter-spacing: 2.5px;
+            }
+
+            &__division{
+
+                width: 206px;
+                margin-top:8px ;
+
+                &__raya1{
+                    width: 90px;
+                    height: 1px;
+                    background: #ccc;
+                    float: left;
+                }
+                &__raya2{
+                    width: 90px;
+                    height: 1px;
+                    background: #ccc;
+                    float: right;
+                }
+                
+                &__cuadro{
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #ddd;
+                    margin-left: 8px;
+                    float: left;
+                    margin-right: 8px;
+                    margin-top: -5px;
+                }
+
+            }
+
+            &__parrafo
+            {
+                text-align: center;
+                width: 525px;
+                font-family: $fuente;
+            }
+        }
+
+        &__items
+        {   
+            margin-top: 30px;
+
+            &__item1
+            {
+
+                &__subtitle
+                {
+                    font-family: $fuente;
+                    font-size: medium;
+                }
+
+                &__span1
+                {
+                    &__icon
+                    {
+                        color: rgb(143, 140, 140);
+                    }
+
+                    &__span2
+                    {
+                        font-size: small;
+                        color: rgb(143, 140, 140);
+                    }
+                }
+
+                &__parrafo
+                {
+                    color: rgb(143, 140, 140);
+                }
+            }
+        }
+}
+
+
+
+
+
+
