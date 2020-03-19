@@ -181,5 +181,7 @@ button {
     .news__items__item1__span1__span2 {
       font-size: small;
       color: #8f8c8c; }
+    .news__items__item1__span3__corazon {
+      text-align: end; }
     .news__items__item1__parrafo {
       color: #8f8c8c; }
