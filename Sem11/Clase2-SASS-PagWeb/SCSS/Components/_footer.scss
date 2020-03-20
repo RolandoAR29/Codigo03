@@ -1,0 +1,40 @@
+.footer-section{
+    background-color: $colorNegro;
+}
+.footer{
+    color:$colorBlanco;
+    position: relative;
+    margin-top: 0px;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+    &__title{
+        margin-bottom:30px;
+    }
+    &__subtitle{
+        color:$colorBlanco;
+    }
+    &__item.cols3{
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__icon.cols-2{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    &__text{
+        margin-bottom: 30px;
+        text-align: justify;
+        color: $colorFooter;
+    }
+    &__sub_container{
+        background-color: $colorSubContainer;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__sub_container_title{
+        padding: 15px;
+        color: $colorFooter;
+    }
+}
