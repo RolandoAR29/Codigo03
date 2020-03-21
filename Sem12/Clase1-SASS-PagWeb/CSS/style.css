@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "OpenSans-regular";
+  src: url("../resources/font/OpenSans-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans-regular";
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .cols-1 {
+  width: 8.3333333333%;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+.row .cols-2 {
+  width: 16.6666666667%;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+.row .cols-3 {
+  width: 25%;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+.row .cols-4 {
+  width: 33.3333333333%;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+.row .cols-6 {
+  width: 50%;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+.row .cols-12 {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section {
+  padding: 80px 120px;
+  text-align: center;
+}
+
+button {
+  font-weight: bolder;
+  text-transform: capitalize;
+  border-radius: 3px;
+  border: none;
+  padding: 20px 40px;
+  outline: 0;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0 3px;
+  color: #FFFFFF;
+  background-color: #1D809F;
+  margin-top: 30px;
+}
+
+.boton__secundario {
+  background-color: #343A40;
+}
+
+.portada {
+  height: 100vh;
+  background-image: url("../resources/image/bg-masthead.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #000000;
+}
+.portada__titulo {
+  font-size: 80px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.portada__sub__titulo {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 0;
+}

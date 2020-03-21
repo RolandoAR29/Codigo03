@@ -1,0 +1,24 @@
+.portada{
+    height: $altoPantalla;
+    background-image: url('../resources/image/bg-masthead.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $colorNegro;
+
+    &__titulo{
+        font-size: $tamanioTituloPrincipal;
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+
+    &__sub__titulo{
+        font-size: $tamanioTitulo;
+        font-style: italic;
+        margin-top: 0;
+    }
+}

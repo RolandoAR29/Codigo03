@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $fuente;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    @for $i from 1 through 12 {
+        @if 12 % $i == 0 {
+            .cols-#{$i} {
+                width: 100 / (12 / $i) * 1%;
+                padding: 0 15px;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+section {
+    padding: 80px 120px;
+    text-align: center;
+    // display: flex;
+    // flex-direction: row;    
+}

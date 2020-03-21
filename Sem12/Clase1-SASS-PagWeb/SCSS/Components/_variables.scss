@@ -1,0 +1,25 @@
+//Colores anteriores
+$colorPrincipal: #ECB807;
+$colorSecundario: #1D809F;
+$colorBlanco: #FFFFFF;
+$colorNegro: #000000;
+$colorTerciario: #343A40;
+
+@font-face {
+    font-family: 'OpenSans-regular';
+    src: url('../resources/font/OpenSans-Regular.ttf');
+}
+$fuente: 'OpenSans-regular';
+
+$tamanioTituloPrincipal: 80px;
+$tamanioTitulo: 24px;
+$tamanioTexto: 16px;
+
+$altoPantalla: 100vh;
+$anchoPantalla: 100vw;
+
+$altoIcono: 100px;
+$anchoIcono: 100px;
+
+$desktop: 768px;
+$mobile: 456px;
