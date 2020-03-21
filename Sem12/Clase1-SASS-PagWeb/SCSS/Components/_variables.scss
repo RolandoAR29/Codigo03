@@ -1,9 +1,9 @@
 //Colores anteriores
 $colorPrincipal: #ECB807;
 $colorSecundario: #1D809F;
+$colorTerciario: #343A40;
 $colorBlanco: #FFFFFF;
 $colorNegro: #000000;
-$colorTerciario: #343A40;
 
 @font-face {
     font-family: 'OpenSans-regular';
@@ -23,3 +23,6 @@ $anchoIcono: 100px;
 
 $desktop: 768px;
 $mobile: 456px;
+
+$imagenPortada1: url('../resources/image/bg-masthead.jpg');
+$imagenPortada2: url('../resources/image/bg-callout.jpg');

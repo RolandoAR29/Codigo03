@@ -1,0 +1,28 @@
+@mixin seccion($bg-color) {
+    background-color: $bg-color;
+}
+
+.seccion{
+    @include seccion($colorSecundario);
+
+    &__titulo{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $colorPrincipal;
+    }
+
+    &__sub__titulo{
+        font-size: 40px;
+        text-transform: capitalize;
+        color: $colorBlanco;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+}
+
+.color-seccion-2{
+    @include seccion($colorBlanco);
+}
+.color__negro{
+    color: $colorNegro;
+}

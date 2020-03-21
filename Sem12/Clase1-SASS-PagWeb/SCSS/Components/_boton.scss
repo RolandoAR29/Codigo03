@@ -6,21 +6,15 @@ button {
     padding: 20px 40px;
     outline: 0;
     font-size: $tamanioTexto;
-    color: $colorBlanco;
     margin: 0 3px;
     color: $colorBlanco;
     background-color: $colorSecundario;
     margin-top: 30px;
-    // &:hover{
-        
-    // }
+    &:hover{
+        filter: brightness(80%);
+    }
 }
 
 .boton__secundario{
     background-color: $colorTerciario;
-
-    // &:hover{
-    //     background-color: $colorBlanco;
-    //     color: $colorPrincipal;
-    // }
 }

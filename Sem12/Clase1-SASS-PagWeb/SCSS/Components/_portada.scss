@@ -1,6 +1,6 @@
-.portada{
+@mixin portada($imagen) {
     height: $altoPantalla;
-    background-image: url('../resources/image/bg-masthead.jpg');
+    background-image: $imagen;
     background-position: center center;
     background-size: cover;
 
@@ -14,6 +14,8 @@
         font-size: $tamanioTituloPrincipal;
         text-transform: capitalize;
         font-weight: bolder;
+        max-width: 50rem;
+        text-align: center;
     }
 
     &__sub__titulo{
@@ -21,4 +23,12 @@
         font-style: italic;
         margin-top: 0;
     }
+}
+
+.portada{
+    @include portada($imagenPortada1);
+}
+
+.bg-imagen2{
+    @include portada($imagenPortada2);
 }

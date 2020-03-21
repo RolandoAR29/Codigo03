@@ -1,0 +1,30 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon{
+        height: $altoIcono;
+        width: $anchoIcono;
+        padding: 25px;
+        background-color: $colorBlanco;
+        border-radius: 50%;
+    }
+
+    i{
+        color: $colorSecundario;
+    }
+
+    &__title{
+        color: $colorBlanco;
+        font-weight: bold;
+        margin: 16px 0;
+        font-size: 20px;
+    }
+
+    &__text{
+        color: $colorBlanco;
+        font-size: 14px;
+        filter: brightness(80%);
+    }
+}

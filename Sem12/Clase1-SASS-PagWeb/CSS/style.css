@@ -77,7 +77,7 @@ h6 {
 }
 
 section {
-  padding: 80px 120px;
+  padding: 120px 100px;
   text-align: center;
 }
 
@@ -89,11 +89,13 @@ button {
   padding: 20px 40px;
   outline: 0;
   font-size: 16px;
-  color: #FFFFFF;
   margin: 0 3px;
   color: #FFFFFF;
   background-color: #1D809F;
   margin-top: 30px;
+}
+button:hover {
+  filter: brightness(80%);
 }
 
 .boton__secundario {
@@ -115,9 +117,86 @@ button {
   font-size: 80px;
   text-transform: capitalize;
   font-weight: bolder;
+  max-width: 50rem;
+  text-align: center;
 }
 .portada__sub__titulo {
   font-size: 24px;
   font-style: italic;
   margin-top: 0;
+}
+
+.bg-imagen2 {
+  height: 100vh;
+  background-image: url("../resources/image/bg-callout.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #000000;
+}
+.bg-imagen2__titulo {
+  font-size: 80px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  max-width: 50rem;
+  text-align: center;
+}
+.bg-imagen2__sub__titulo {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.seccion {
+  background-color: #1D809F;
+}
+.seccion__titulo {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ECB807;
+}
+.seccion__sub__titulo {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.color-seccion-2 {
+  background-color: #FFFFFF;
+}
+
+.color__negro {
+  color: #000000;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item__icon {
+  height: 100px;
+  width: 100px;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.item i {
+  color: #1D809F;
+}
+.item__title {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 16px 0;
+  font-size: 20px;
+}
+.item__text {
+  color: #FFFFFF;
+  font-size: 14px;
+  filter: brightness(80%);
 }
