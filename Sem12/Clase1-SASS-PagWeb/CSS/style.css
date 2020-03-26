@@ -81,6 +81,14 @@ section {
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
 button {
   font-weight: bolder;
   text-transform: capitalize;
@@ -100,6 +108,11 @@ button:hover {
 
 .boton__secundario {
   background-color: #343A40;
+}
+
+.boton__terciario {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .portada {
@@ -170,6 +183,11 @@ button:hover {
   background-color: #FFFFFF;
 }
 
+.color-seccion-3 {
+  background-color: #1D809F;
+  color: #FFFFFF;
+}
+
 .color__negro {
   color: #000000;
 }
@@ -199,4 +217,58 @@ button:hover {
   color: #FFFFFF;
   font-size: 14px;
   filter: brightness(80%);
+}
+
+.seccion__portafolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portafolio {
+  width: 50%;
+}
+.portafolio__contenedor__imagen {
+  position: relative;
+}
+.portafolio__descripcion {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  text-align: left;
+  padding: 50px;
+  padding-top: 50%;
+  color: #FFFFFF;
+}
+.portafolio__descripcion:hover {
+  background-color: #1D809F;
+  opacity: 0.5;
+  transition: 1s;
+  transform: scale(0.8);
+}
+.portafolio__descripcion__titulo {
+  font-size: 14px;
+  font-size: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+}
+.footer__icons__item {
+  width: 66.6666666667px;
+  height: 66.6666666667px;
+  background-color: #1D809F;
+  margin: 0 15px;
+  padding: 18px;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+.footer__descripcion {
+  margin-top: 25px;
+  font-size: 10px;
 }

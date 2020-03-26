@@ -23,6 +23,10 @@
 .color-seccion-2{
     @include seccion($colorBlanco);
 }
+.color-seccion-3{
+    @include seccion($colorSecundario);
+    color: $colorBlanco;
+}
 .color__negro{
     color: $colorNegro;
 }

@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icons{
+        display: flex;
+        flex-direction: row;
+
+        &__item{
+            width: $anchoIcono / 1.5;
+            height: $altoIcono / 1.5;
+            background-color: $colorSecundario;
+            margin: 0 15px;
+            padding: 18px;
+            color: $colorBlanco;
+            border-radius: 50%;
+        }
+    }
+
+    &__descripcion{
+        margin-top: 25px;
+        font-size: 10px;
+    }
+}

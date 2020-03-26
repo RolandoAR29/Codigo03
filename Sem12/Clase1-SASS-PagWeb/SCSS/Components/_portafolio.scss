@@ -1,0 +1,35 @@
+.seccion__portafolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portafolio{
+    width: 50%;
+
+    &__contenedor__imagen{
+        position: relative;
+    }
+
+    &__descripcion{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        text-align: left;
+        padding: 50px;
+        padding-top: 50%;
+        color: $colorBlanco;
+
+        &:hover{
+            background-color: $colorSecundario;
+            opacity: 0.5;
+            transition: 1s;
+            transform: scale(.8);
+        }
+
+        &__titulo{
+            font-size: 14px;
+            font-size: bold;
+        }
+    }
+
+
+}
