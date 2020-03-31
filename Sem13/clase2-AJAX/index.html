@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <p><b>Ingrese un nombre:</b></p>
+    <p><b>Ingrese sus datos de usuario:</b></p>
     <form>
-        Nombre: <input type="text" onkeyup="showHint(this.value)">
+        Nombre: <input type="text" id="nombre">
+        Contraseña: <input type="text" id="password">
     </form>
-    <p>Sugerencia: <span id="txtHint"></span></p>
+    <button>Ingresar</button>
+
+    <p><span id='txtRespuesta'></span></p>
+    
     <script src="script.js"></script>
 </body>
 </html>
