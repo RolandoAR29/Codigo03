@@ -1,0 +1,51 @@
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    cursor: pointer;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#caja{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+#caja2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+#caja3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* position: absolute; */
+}
+
+#caja4{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.azul{
+    color: blue;
+}
+
+.rojo{
+    font-weight: bold;
+}
+
+#caja6{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
