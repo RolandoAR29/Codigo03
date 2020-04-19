@@ -1,0 +1,44 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+	padding: 20px 30px;
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%
+}
+h1{text-transform: uppercase; text-align: center;}
+form{
+	width: 400px; margin: 20px auto;
+	position: relative;
+}
+input{
+	width: 60%;
+	padding: 9px 10px;
+	font-size: 16px;
+}
+button {
+	width: 32%;
+	height: 40px;
+	margin-top: -20px;
+	background-color: #0e4fb1;
+	color: #FFFFFF;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	position: relative;
+	z-index: 3;
+}
+.contenedor div{
+	margin: 20px 0;
+	font-weight: 800;
+}
+.contenedor div span{
+	margin: 20px 0;
+	font-weight: 400;
+	text-align: right;
+}
+.ajaxgif{
+	position:absolute; bottom:12px; right:-20px;}
+.hide{
+	display:none;}
