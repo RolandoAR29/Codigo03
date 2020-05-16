@@ -78,4 +78,11 @@
     console.log( sumarN(5,5) );
     console.log( sumarF(10,10) );
 
+    const powerRanger = {
+        nombre: 'Sergio',
+        saltar() {
+            console.log(`${ this.nombre } salta!`)
+        }
+    }
+
 })();

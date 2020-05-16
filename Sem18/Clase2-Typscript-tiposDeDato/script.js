@@ -58,4 +58,16 @@
     const sumarF = (a, b) => a + b;
     console.log(sumarN(5, 5));
     console.log(sumarF(10, 10));
+    const powerRanger = {
+        nombre: 'Sergio',
+        saltar() {
+            // setTimeout( function() {
+            //     console.log(`${ this.nombre } salta!`);
+            // }, 1000);
+            setTimeout( () => {
+                console.log(`${ this.nombre } salta!`);
+            }, 1000);
+        }
+    };
+    powerRanger.saltar();
 })();
