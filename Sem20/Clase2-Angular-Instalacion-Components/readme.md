@@ -1,5 +1,5 @@
-ng new miApp            ->  Crear un proyecto en Angular
-ng serve -o             ->  Ejecutar proyecto
+ng new nombre-de-aplicacion         ->  Crear un proyecto en Angular
+ng serve -o                         ->  Ejecutar proyecto
 
 ng generate component carpetaDeComponentes/componente     ->  creación de componente
 - forma abrevida: ng g c carpetaDeComponentes/componente

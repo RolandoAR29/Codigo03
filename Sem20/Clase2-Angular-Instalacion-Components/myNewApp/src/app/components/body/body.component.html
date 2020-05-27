@@ -2,12 +2,29 @@
     <h1>Hola Mundo</h1>
     <p>Saludos desde Angular</p>
 
+    <div class="row">
 
-    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-        <div class="card-header">{{ card }}</div>
-        <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="col">
+            <h2>*ngIf</h2>
+            <hr>
+            <div *ngIf="show" class="card text-white bg-primary mb-3" style="max-width: 100%;">
+                <div class="card-header">{{ text.title }}</div>
+                <div class="card-body">
+                    <p class="card-text">{{ text.messagge }}</p>
+                </div>
+            </div>
+
+            <button (click)=" show = !show " type="button" class="btn btn-outline-primary btn-block">Mostrar/Ocultar</button>
         </div>
+
+        <div class="col">
+            <h2>*ngFor</h2>
+            <hr>
+            <ul class="list-group">
+                <li *ngFor="let powerRanger of powerRangers" class="list-group-item">{{ powerRanger }}</li>
+            </ul>
+        </div>
+
     </div>
+
 </div>
