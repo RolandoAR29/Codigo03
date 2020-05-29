@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes'
 
 // Servicios
-
+import { ArtistsService } from './services/artists.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ArtistsComponent } from './components/artists/artists.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,16 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     AboutComponent,
     ArtistsComponent,
-    FooterComponent
+    FooterComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    ArtistsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
