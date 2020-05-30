@@ -22,6 +22,4 @@ export class ArtistComponent {
 		console.log(this.artist);
 	}
 
-	
-
 }

@@ -10,7 +10,7 @@ export class ArtistsService {
             img: "assets/img/ac-dc.jpg",
             aparicion: "1980-11-05",
             genero: "Rock",
-            idioma: "Ingles"
+            idioma: "Inglés"
         },
         {
             nombre: "KISS",
@@ -18,7 +18,7 @@ export class ArtistsService {
             img: "assets/img/kiss.jpg",
             aparicion: "1970-11-05",
             genero: "Rock",
-            idioma: "Ingles"
+            idioma: "Inglés"
         },
         {
             nombre: "Guns 'n Roses",
@@ -26,7 +26,7 @@ export class ArtistsService {
             img: "assets/img/gnr.jpg",
             aparicion: "1982-11-05",
             genero: "Rock",
-            idioma: "Ingles"
+            idioma: "Inglés"
         },
         {
             nombre: "Soda Stereo",
@@ -42,7 +42,7 @@ export class ArtistsService {
             img: "assets/img/queen.jpg",
             aparicion: "1972-11-05",
             genero: "Rock",
-            idioma: "Ingles"
+            idioma: "Inglés"
         },
         {
             nombre: "Metallica",
@@ -50,7 +50,7 @@ export class ArtistsService {
             img: "assets/img/metallica.jpg",
             aparicion: "1970-11-05",
             genero: "Rock",
-            idioma: "Ingles"
+            idioma: "Inglés"
         },
         {
             nombre: "Hombres G",
@@ -81,6 +81,20 @@ export class ArtistsService {
     getArtists = () => this.artists;
 
     getArtist = (id) => this.artists[id];
+
+    buscarArtista( texto:string ):Artist[] {
+        let artistsArray: Artist[] = [];
+        texto = texto.toLowerCase();
+
+        for( let artist of this.artists ){
+            let nombre = artist.nombre.toLowerCase();
+            if(nombre.indexOf(texto) >= 0){
+                artistsArray.push(artist);
+            }
+        }
+
+        return artistsArray;
+    }
 
     constructor() {
         console.log('Servicio listo !!!');

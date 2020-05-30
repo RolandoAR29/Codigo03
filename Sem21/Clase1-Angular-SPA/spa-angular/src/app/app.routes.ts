@@ -3,12 +3,14 @@ import { HomeComponent } from './components/home/home.component'; // Importar "H
 import { AboutComponent } from './components/about/about.component';
 import { ArtistsComponent } from './components/artists/artists.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent }, // Ruta para el home
     { path: 'about', component: AboutComponent }, // Ruta para el about
     { path: 'artists', component: ArtistsComponent }, // Ruta para el artists
     { path: 'artist/:id', component: ArtistComponent }, // Ruta para el artists
+    { path: 'buscar/:texto', component: BuscadorComponent }, // Ruta para la búsqueda de artists
     { path: '**', pathMatch: 'full', redirectTo: 'home' } // Ruta por defecto
 ];
 
