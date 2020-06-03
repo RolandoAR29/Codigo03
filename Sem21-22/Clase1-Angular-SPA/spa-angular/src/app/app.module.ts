@@ -16,6 +16,7 @@ import { ArtistsComponent } from './components/artists/artists.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { ArtistaTarjetaComponent } from './components/artista-tarjeta/artista-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     ArtistsComponent,
     FooterComponent,
     ArtistComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    ArtistaTarjetaComponent
   ],
   imports: [
     BrowserModule,

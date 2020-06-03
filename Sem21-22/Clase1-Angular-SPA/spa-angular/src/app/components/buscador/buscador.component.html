@@ -1,0 +1,14 @@
+<h1>Buscando <small> {{ texto }}</small></h1>
+<hr>
+
+<div class="row" *ngIf="artists.length == 0">
+	<div class="col-md-12">
+		<div class="alert alert-primary" role="alert">
+			No se encuentran artistas con el término: {{ texto }}
+		</div>
+	</div>
+</div>
+
+<div class="card-columns mt-5">
+	<app-artista-tarjeta (artistSelected)="verArtist( $event )" [artist]="artist" [i]="artist.indice"  *ngFor="let artist of artists"></app-artista-tarjeta>
+</div>

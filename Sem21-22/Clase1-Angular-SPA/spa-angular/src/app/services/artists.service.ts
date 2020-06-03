@@ -86,9 +86,13 @@ export class ArtistsService {
         let artistsArray: Artist[] = [];
         texto = texto.toLowerCase();
 
-        for( let artist of this.artists ){
+        // for( let artist of this.artists ){
+        for (let i = 0; i < this.artists.length; i++) {
+            let artist = this.artists[i];
+
             let nombre = artist.nombre.toLowerCase();
             if(nombre.indexOf(texto) >= 0){
+                artist.indice = i;
                 artistsArray.push(artist);
             }
         }
@@ -107,5 +111,6 @@ export interface Artist {
     img: string;
     aparicion: string;
     genero: string;
-    idioma: string
+    idioma: string;
+    indice?:number;
 }
