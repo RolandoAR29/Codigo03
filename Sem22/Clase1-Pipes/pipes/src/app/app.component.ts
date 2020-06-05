@@ -33,31 +33,9 @@ export class AppComponent {
 
     personajes: string[] = ['Ironman', 'Spiderman', 'Thor','Loki','Groot'];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
     fecha     : Date     = new Date();
     activar   : boolean  = true;
 
     idioma    : string = 'en';
-    videoUrl  : string = 'https://www.youtube.com/embed/-CBKW-90VxQ';
+    videoUrl  : string = 'https://www.youtube.com/embed/vjVkXlxsO8Q';
 }

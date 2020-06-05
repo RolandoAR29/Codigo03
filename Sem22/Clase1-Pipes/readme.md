@@ -11,3 +11,6 @@ Añadir
       useValue: 'es'
     }
     en PROVIDERS
+
+crear pipe
+ng g p pipes/nombreDelPipe
