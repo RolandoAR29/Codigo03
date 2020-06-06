@@ -17,7 +17,7 @@ import { ROUTES } from './app.routes';
 import { DatosComponent } from './components/datos/datos.component';
 
 // Servicios
-import { SpotifyService } from './service/spotify.service';
+// import { SpotifyService } from './service/spotify.service';
 
 @NgModule({
   declarations: [
