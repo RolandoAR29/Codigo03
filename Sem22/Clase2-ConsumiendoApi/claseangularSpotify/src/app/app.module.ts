@@ -16,8 +16,14 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ROUTES } from './app.routes';
 import { DatosComponent } from './components/datos/datos.component';
 
+
 // Servicios
 // import { SpotifyService } from './service/spotify.service';
+
+// Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,10 @@ import { DatosComponent } from './components/datos/datos.component';
     SearchComponent,
     ArtistaComponent,
     NavbarComponent,
-    DatosComponent
+    DatosComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
