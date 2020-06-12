@@ -21,7 +21,7 @@ export class SearchComponent {
 		console.log(texto);
 
 		this.loading = true;
-		this.spotify.getArtista(texto)
+		this.spotify.getArtistas(texto)
 			.subscribe( (datos :any) => {
 				console.log(datos);
 				this.artistas = datos;
