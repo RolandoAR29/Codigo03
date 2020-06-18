@@ -1,16 +1,24 @@
 <h4>Formularios <small> template</small></h4>
 <hr>
-<form autocomplete="off">
+<form autocomplete="off" (ngSubmit)="guardar(formulario)" #formulario="ngForm">
     <div>
         <div class="form-group row">
             <label class="col-2 col-form-label">Nombre</label>
             <div class="col-8">
-
+                <!-- [class.is-invalid]="(nombre.invalid && nombre.touched) || (nombre.invalid && formulario.submitted)" -->
                 <input type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="Nombre">
+                        class="form-control is-invalid"
+                        placeholder="Nombre"
+                        name="nombre"
+                        required
+                        minlength="5"
+                        [ngModel]="usuario.nombre"
+                        [class.is-invalid]="nombre.invalid && nombre.touched"
+                        [class.is-valid]="nombre.valid && nombre.touched"
+                        #nombre="ngModel"
+                        >
+                <small *ngIf="nombre.invalid && nombre.touched"
+                        class="form-text text-danger">Dato debe contener mínimo 5 letras</small>
             </div>
         </div>
 
@@ -19,23 +27,67 @@
             <div class="col-8">
 
                 <input type="text"
-                        name=""
-                        id=""
+                        name="apellido"
+                        required
                         class="form-control"
-                        placeholder="Apellido">
+                        placeholder="Apellido"
+                        minlength="5"
+                        [ngModel]="usuario.apellido"
+                        [class.is-invalid]="apellido.invalid && apellido.touched"
+                        [class.is-valid]="apellido.valid && apellido.touched"
+                        #apellido="ngModel"
+                        >
+                <small *ngIf="apellido.invalid && apellido.touched"
+                        class="form-text text-danger">Dato debe contener mínimo 5 letras</small>
             </div>
         </div>
 
         <div class="form-group row">
-            <label class="col-2 col-form-label">Correo electrónico</label>
+            <label class="col-2 col-form-label">Pais</label>
             <div class="col-8">
-
-                <input type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="Correo electrónico">
+                <select class="form-control"
+                        name="pais"
+                        [ngModel]="usuario.pais"
+                        required
+                        [disabled]="paises.length === 0"
+                        >
+                    <option *ngFor="let pais of paises"
+                            [value]="pais.codigo">
+                        {{ pais.nombre }}
+                    </option>
+                </select>
             </div>
         </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Correo</label>
+            <div class="col-8">
+
+                <input type="email"
+                        name=""
+                        class="form-control"
+                        required
+                        placeholder="Correo electrónico"
+                        [ngModel]="usuario.correo"
+                        name="correo"
+                        pattern="[a-z0-9._%+-]+@[[a-z0-9.-]+\.[a-z]{2,3}$"
+                        [class.is-invalid]="correo.invalid && correo.touched"
+                        [class.is-valid]="correo.valid && correo.touched"
+                        #correo="ngModel"
+                        >
+                <small *ngIf="correo.invalid && correo.touched"
+                        class="form-text text-danger">El correo no contiene el formato adecuado</small>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">&nbsp;</label>
+            <div class="input-group col-md-8">
+                <button type="submit" class="btn btn-outline-primary btn-block">
+                    Guardar
+                </button>
+            </div>
+        </div>
+
     </div>
 </form>
