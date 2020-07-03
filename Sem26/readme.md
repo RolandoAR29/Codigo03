@@ -1,0 +1,1 @@
+ng g d directives/ngDropFiles   -> Crear directivas en ngDropFile en carpeta directives
