@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.file-zone{
+    opacity: 0.5;
+    padding: 5px;
+    border: 3px dotted lightgray;
+}
+
+.file-in{
+    border: 3px dotted blue;
+}
