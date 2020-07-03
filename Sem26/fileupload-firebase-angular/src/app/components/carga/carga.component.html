@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="co-md-4">
+        <h3>Seleccione archivos</h3>
+        <div>
+            <h4>Cargar imágenes aquí</h4>
+            <img src="assets/cargar-imagen.png">
+        </div>
+    </div>
+
+
+    <div class="col-md-8">
+        <h4>Cargar archivos</h4>
+
+        <button (click)="cargarImagenes()" class="btn btn-success">Cargar a Firebase</button>
+        <button class="btn btn-danger ml-2">Cargar a Firebase</button>
+
+        <table class="table mt-2">
+            <thead class="thead=dark">
+                <tr>
+                    <th>Nombre archivo</th>
+                    <th>Tamaño</th>
+                    <th>Progreso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dsadas</td>
+                    <td>10 MB</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
