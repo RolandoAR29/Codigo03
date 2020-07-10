@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>React</title>
 
+    <!-- Enlaces para llamar a librería de react -->
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -13,8 +14,11 @@
     <div id="root"></div>
 
     <script type="text/babel">
+        // Seleccionar un elemento del DOM
         const div = document.querySelector('#root');
-        const h1 = <h1>Hola mundo</h1>;
+
+        const nombre = 'Iron man'
+        const h1 = <h1>Hola mundo, yo soy { nombre }</h1>;
         ReactDOM.render(h1, div);
     </script>
 

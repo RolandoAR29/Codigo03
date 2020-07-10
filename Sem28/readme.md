@@ -6,7 +6,7 @@ REACT
 - Desarrollo de aplicaciones móviles con React Native
 - Desarrollo de aplicaciones de escritorio con React Native
 
-#jsx = JS + XML
+JSX = JS + XML
  
 JS
 document.getElementById('id');
@@ -37,6 +37,16 @@ $('#div').append(<h1>Hello World</h1>);
 
 --------------------------------------------------
 
+// Ejemplo de "variable opcional" en javascript (últimas versiones)
+
+const res = {
+  // personas: ['Juan', 'Pepe']
+};
+
+console.log(res.personas?.length);
+
+--------------------------------------------------
+
 PLUGGINS
 ES7 React/Redux/GraphQL/React-Native snippets
 Simple React Snippets
@@ -45,3 +55,12 @@ Auto Close Tag
 EXTENSIONES
 React Developer Tools
 Redux DevTools
+Awesome JSON Viewer
+
+--------------------------------------------------
+
+Instalación de proyecto con REACT.JS
+npx create-react-app nombreDeLaAplicacion
+
+Ejecutar proyecto
+npm start
