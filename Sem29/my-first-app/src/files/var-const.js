@@ -25,6 +25,16 @@ export function saludoHeroe(avenger = 'Thor') {
 
 // console.log(`dice: ${heroe(avenger)}`);
 
+export const getUser = () => ({
+    uid: 'hola123',
+    username: 'ADMIN'
+})
+
+export const getUsuarioActivo = (name) => ({
+    uid: 'hola123',
+    username: name
+});
+
 
 // ******************** Objeto Literales
 
@@ -90,7 +100,7 @@ const { nombre:nombre2 } = usuario
 //     // console.log(nombre, edad, clave );
 // }
 
-const retornaUsuario = ({ nombre, edad, clave }) => {
+export const retornaUsuario = ({ nombre, edad, clave }) => {
     return {
         nombreCalve: clave,
         anios: edad
@@ -109,10 +119,10 @@ const [ , , p3 ] = personajes;
 
 // console.log(p3);
 
-const retornaArreglo = () => {
+export const retornaArreglo = () => {
     return ['ABC', 123];
 }
-const [letras, numeros ] = retornaArreglo();
+// const [letras, numeros ] = retornaArreglo();
 // console.log(letras, numeros);
 
 personajes.push(usuario);

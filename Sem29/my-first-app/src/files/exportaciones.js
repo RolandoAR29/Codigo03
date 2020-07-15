@@ -1,6 +1,6 @@
 // import { artistas } from './data/artistas';
 // import  artist, { genero } from './data/artistas';
-import { artistas,  genero } from './data/artistas';
+import artistas from '../tests/data/artistas'
 
 // const getArtistaById = (nombre) => {
 //     return artistas.find( (artista) => {
@@ -12,11 +12,11 @@ import { artistas,  genero } from './data/artistas';
 //     })
 // }
 
-console.log(genero);
+// console.log(genero);
 
-const getArtistaById = (genero) => artistas.find( (artista) => artista.genero === genero );
+export const getArtistaById = (nombre) => artistas.find( (artista) => artista.nombre === nombre );
 
-const getArtistaByGenre = (idioma) => artistas.filter( (artista) => artista.idioma === idioma );
+export const getArtistaByGenre = (idioma) => artistas.filter( (artista) => artista.idioma === idioma );
 
-console.log( getArtistaById('Rock') );
-console.log( getArtistaByGenre('Español') );
+// console.log( getArtistaById('Rock') );
+// console.log( getArtistaByGenre('Español') );
