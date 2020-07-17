@@ -17,7 +17,7 @@ const PrimeraApp = ({ saludo, subtitulo }) => {
     //         <p>Bienvenido</p>
     //     </Fragment>
     // );
-    console.log(saludo);
+    // console.log(saludo);
 
     // if(!saludo){
     //     throw new Error('El saludo es necesario');
@@ -25,7 +25,7 @@ const PrimeraApp = ({ saludo, subtitulo }) => {
 
     return (
         <>
-            <h1> { saludo } </h1>
+            <h1>{ saludo }!!!</h1>
             {/* <pre> { JSON.stringify(saludo,null, 3) } </pre> */}
             <p>{ subtitulo }</p>
         </>

@@ -29,3 +29,8 @@
 # Ejecutar pruebas
 npm run test
 
+# Enzyme
+https://github.com/enzymejs/enzyme
+
+# Enzyme-to-json
+https://www.npmjs.com/package/enzyme-to-json
