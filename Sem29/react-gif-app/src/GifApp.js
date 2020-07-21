@@ -15,7 +15,6 @@ export const GifApp = () => {
             <ol>
                 {
                     categories.map( category => {
-                        console.log('Gaaaa');
                         // return <li key={ category }> { category }</li>
                         return <GifGrid key={ category }
                                     category={ category } />
