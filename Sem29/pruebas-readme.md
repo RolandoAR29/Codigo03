@@ -34,3 +34,6 @@ https://github.com/enzymejs/enzyme
 
 # Enzyme-to-json
 https://www.npmjs.com/package/enzyme-to-json
+
+# Instalar un servidor en local
+npm install --global http-server
