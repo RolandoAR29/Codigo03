@@ -11,12 +11,16 @@ export const AddCategory = ({ setCategories }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setCategories( category => [inputValue, ...category]);
-        setInputValue('');
+
+        if(inputValue.trim().length > 2){
+            setCategories( category => [inputValue, ...category]);
+            setInputValue('');
+        }
     }
 
     return (
         <form onSubmit={ handleSubmit }>
+            <p>{ inputValue }</p>
             <input
                 type="text"
                 value={ inputValue }

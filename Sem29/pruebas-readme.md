@@ -37,3 +37,6 @@ https://www.npmjs.com/package/enzyme-to-json
 
 # Instalar un servidor en local
 npm install --global http-server
+
+# Levantar servidor
+http-server -o
