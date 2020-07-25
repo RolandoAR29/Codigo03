@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './effects.css';
+import { Message } from './Message';
 
 export const SimpleForm = () => {
     
+    // Forma incorrecta de llamar o usar un hook
+    // if(true){
+    //     const [estado, setEstado] = useState(0)
+    // }
+
     const [formState, setFormState] = useState({
         nombre: '',
         correo: ''
@@ -11,15 +17,15 @@ export const SimpleForm = () => {
     const { nombre, correo } = formState;
 
     useEffect(() => {
-        console.log('Hola');
+        // console.log('Hola');
     }, []);
 
-    // useEffect(() => {
-    //     console.log('formState cambió');
-    // }, [formState]);
+    useEffect(() => {
+        // console.log('formState cambió');
+    }, [formState]);
     
     useEffect(() => {
-        console.log('email cambió');
+        // console.log('email cambió');
     }, [correo]);
 
     const handleInputChange = ({ target }) => {
@@ -58,8 +64,8 @@ export const SimpleForm = () => {
                 />
             </div>
 
-            <p>{ nombre }</p>
-            <p>{ correo }</p>
+            { nombre === '123' && <Message /> }
+
         </>
     )
 }
