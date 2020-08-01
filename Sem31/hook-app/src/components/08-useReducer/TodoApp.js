@@ -22,7 +22,7 @@ export const TodoApp = () => {
     });
 
     useEffect(() => {
-        // console.log('estoy guardando',todos)
+        console.log('estoy guardando', todos)
         localStorage.setItem('todos', JSON.stringify(todos));
     }, [todos]);
 
@@ -49,6 +49,22 @@ export const TodoApp = () => {
         reset();
     }
 
+    const handleDelete = ( todoId ) => {
+        const action = {
+            type: 'delete',
+            payload: todoId
+        }
+
+        dispatch(action);
+    }
+
+    const handleToggle = ( todoId ) => {
+        dispatch({
+            type: 'toggle',
+            payload: todoId
+        });
+    }
+
     return (
         <div>
             <h1>TodoApp ( { todos.length } )</h1>
@@ -63,9 +79,15 @@ export const TodoApp = () => {
                                     key={todo.id}
                                     className="list-group-item"
                                 >
-                                    <p className="text-center">{i + 1}. {todo.desc} </p>
+                                    <p
+                                        className={ `${ todo.done && 'complete' }` }
+                                        onClick={ () => handleToggle(todo.id) }
+                                    >
+                                        {i + 1}. {todo.desc}
+                                    </p>
                                     <button
                                         className="btn btn-danger"
+                                        onClick={ () => handleDelete(todo.id) }
                                     >
                                         Borrar
                                     </button>
