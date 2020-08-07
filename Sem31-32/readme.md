@@ -37,3 +37,12 @@ console.log(todos);
     - Renderiza en vista
     - Acción (Agregar nuevo TODO)
     - Reducer (Agregar, editar, eliminar)
+
+
+
+## REACT ROUTER
+- Información
+    https://reactrouter.com/web/guides/quick-start
+
+- Instalación
+    npm install react-router-dom
