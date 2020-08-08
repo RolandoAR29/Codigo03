@@ -4,16 +4,16 @@ export const heroes = [
         'superhero': 'batman',
         'publisher': 'Dc Comics',
         'alter_ego': 'Bruce Wayne',
-        'first_appearance' : 'detective Comics #27',
+        'first_appearance': 'detective Comics #27',
         'characters': 'Bruce Wayne'
     },
     {
         'id': 'dc-flash',
         'superhero': 'flash',
         'publisher': 'Dc Comics',
-        'alter_ego': 'Bruce Wayne',
+        'alter_ego': 'Gay Garrick',
         'first_appearance' : 'detective Comics #27',
-        'characters': 'Bruce Wayne'
+        'characters': 'Gay Garrick, Barry Allen, Wally West'
     },
     {
         'id': 'dc-flecha-verde',
@@ -27,9 +27,9 @@ export const heroes = [
         'id': 'dc-superman',
         'superhero': 'superman',
         'publisher': 'Dc Comics',
-        'alter_ego': 'Bruce Wayne',
+        'alter_ego': 'Kal-el',
         'first_appearance' : 'detective Comics #27',
-        'characters': 'Bruce Wayne'
+        'characters': 'Kal-el'
     },
     {
         'id': 'dc-linterna-verde',
