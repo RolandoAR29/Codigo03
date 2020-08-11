@@ -17,7 +17,7 @@ export const heroes = [
     },
     {
         'id': 'dc-flecha-verde',
-        'superhero': 'flecha-verde',
+        'superhero': 'flecha verde',
         'publisher': 'Dc Comics',
         'alter_ego': 'Bruce Wayne',
         'first_appearance' : 'detective Comics #27',
@@ -33,7 +33,7 @@ export const heroes = [
     },
     {
         'id': 'dc-linterna-verde',
-        'superhero': 'linterna-verde',
+        'superhero': 'linterna verde',
         'publisher': 'Dc Comics',
         'alter_ego': 'Bruce Wayne',
         'first_appearance' : 'detective Comics #27',
@@ -73,7 +73,7 @@ export const heroes = [
     },
     {
         'id': 'marvel-capitan-america',
-        'superhero': 'capitan-america',
+        'superhero': 'capitan america',
         'publisher': 'Marvel Comics',
         'alter_ego': 'Bruce Wayne',
         'first_appearance' : 'detective Comics #27',

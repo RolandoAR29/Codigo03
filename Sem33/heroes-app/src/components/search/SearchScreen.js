@@ -17,6 +17,8 @@ export const SearchScreen = ({ history }) => {
     const { searchText } = formValues;
 
     const heroesFiltered = useMemo(() => getHeroesByName(q), [q]);
+
+    // "Búsqueda en tiempo real"
     // const heroesFiltered = getHeroesByName(searchText);
 
     const handleSearch = (e) => {
@@ -76,6 +78,7 @@ export const SearchScreen = ({ history }) => {
                         </div>
                     }
 
+                    {/* "Búsqueda en tiempo real" */}
                     {/* {
                         (searchText !== '' && heroesFiltered.length === 0)
                         &&
