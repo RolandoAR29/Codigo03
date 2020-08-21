@@ -24,3 +24,7 @@ npm install firebase
 ## Redux Thunk
 Para implementación de middleware
 npm install --save redux-thunk
+
+## validator
+Validación de formulario
+npm install validator
