@@ -5,7 +5,7 @@ STORE
 Espacio donde está la información que los componentes consumirán o van a necesitar
 
 ## Instalación
-- npm install react-redux
+`npm install react-redux`
 
 ## Visualización de devTools
 https://github.com/zalmoxisus/redux-devtools-extension
@@ -19,16 +19,20 @@ export const store = createStore(
 
 ## Firebase
 Dependencias de firebase para autenticación
-- npm install firebase
+`npm install firebase`
 
 ## Redux Thunk
 Para implementación de middleware
-- npm install --save redux-thunk
+`npm install --save redux-thunk`
 
 ## validator
 Validación de formulario
-- npm install validator
+`npm install validator`
 
 ## Sweetalert2
 Mensajes de alerta
-- npm install sweetalert2
+`npm install sweetalert2`
+
+## Moment.js
+Manejo de fechas
+`npm install moment --save`
