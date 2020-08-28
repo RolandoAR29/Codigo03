@@ -9,3 +9,6 @@ tsc archivoAConvetir.ts                                 -> Convertir .ts a .js
 
 tsc --init                                              -> Archivo de configuración para typescript
 tsc -w                                                  -> Modo watch de typescript
+
+En PowerShell Para habilitar 
+Set-ExecutionPolicy Unrestricted
