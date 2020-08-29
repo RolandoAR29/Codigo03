@@ -30,10 +30,13 @@
 npm run test
 
 # Enzyme
-https://github.com/enzymejs/enzyme
+- https://github.com/enzymejs/enzyme
+`npm i --save-dev enzyme enzyme-adapter-react-16`
 
 # Enzyme-to-json
-https://www.npmjs.com/package/enzyme-to-json
+ https://www.npmjs.com/package/enzyme-to-json
+ `npm install --save-dev enzyme-to-json`
+
 
 # Instalar un servidor en local
 npm install --global http-server
