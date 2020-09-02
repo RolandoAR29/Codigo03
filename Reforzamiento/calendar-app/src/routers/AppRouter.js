@@ -2,7 +2,8 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 
 import { LoginScreen } from '../components/auth/LoginScreen'
@@ -16,7 +17,7 @@ export const AppRouter = () => {
                         <Route exact path="/login" component={ LoginScreen } />
                         <Route exact path="/" component={ CalendarScreen } />
 
-                        <Route to="/" />
+                        <Redirect to="/" />
                     </Switch>
                 </div>
             </Router>
